@@ -13,18 +13,29 @@
   <div class="menu">
     <img src="btnMenu.png" alt="">
   </div>
-  <div class="test">
+  <div class="test" id="test">
     <div class="back">
-      <div class="photo"></div>
-      <div class="option"> <img src="option.png" alt=""></div>
-      <div class="special"><img src="special.png" alt=""></div>
-      <p>Сергей Соколов</p>
+      <div class="mainProfile">
+
+        <div class="option"> <img src="option.png" alt=""></div>
+        <div class="photo"></div>
+        <div class="special"><img src="special.png" alt=""></div>
+        <p>Сергей Соколов</p>
+      </div>
       <div class="priceBox">
         <span>Цена</span>
         <span id="rangePrice"></span>
+        <div class="tool"> <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
       </div>
-      <div class="tool"> <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <div class="directBox">
+        <span>Расстояние</span>
+        <span id="rangeDirect"></span>
+        <div class="tool"> <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
+        </div>
+
       </div>
+      <div class="up"><img src="upBtn.png" alt=""></div>
     </div>
 
   </div>

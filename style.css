@@ -4,7 +4,6 @@
 }
 
 body {
-
   background-image: url("488176-fish-vegetables-food-cook3.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -14,7 +13,7 @@ body {
 
 .test {
   display: none;
-
+  animation: 0.3s anim;
 }
 
 .back {
@@ -24,25 +23,55 @@ body {
   position: absolute;
 }
 
-.special {
-  position: absolute;
+.special img {
   width: 56px;
   height: 56px;
-  left: 253px;
-  top: 125px;
 }
 
 .priceBox {
   position: absolute;
   width: 335px;
   height: 99px;
-  left: 13px;
+  left: 50%;
+  transform: translate(-50%);
   top: 286px;
   border-radius: 24px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 }
 
-.priceBox span {
+.directBox {
+  position: absolute;
+  width: 335px;
+  height: 99px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 400px;
+  border-radius: 24px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.up {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 50%;
+  top: 96%;
+  transform: translate(-50%, -96%);
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.priceBox span,
+.directBox span {
   position: absolute;
   left: 35px;
   top: 16px;
@@ -69,10 +98,8 @@ body {
   font-size: 20px;
   line-height: 20px;
   /* identical to box height, or 100% */
-
   text-align: right;
   letter-spacing: -0.24px;
-
   color: #000000;
 }
 
@@ -131,18 +158,26 @@ body {
 
 .tool {
   position: absolute;
-  left: 41px;
-  top: 347px;
+  transform: translate(-50%);
+  left: 50%;
+  top: 50px;
+}
 
+
+.mainProfile {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .back p {
   position: absolute;
   width: 148px;
   height: 20px;
-  left: 113px;
+  left: 50%;
   top: 222px;
-
+  transform: translate(-50%);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -156,22 +191,15 @@ body {
   color: #000000;
 }
 
-.option {
-  position: absolute;
+.option img {
   width: 56px;
   height: 56px;
-  left: 50px;
-  top: 125px;
 }
 
 .photo {
-  position: absolute;
   width: 131px;
   height: 131px;
-  left: 122px;
-  top: 83px;
   background: url("photo.png");
-  box-sizing: border-box;
 }
 
 .menu {
