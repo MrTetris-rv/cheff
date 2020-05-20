@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  background-image: url("488176-fish-vegetables-food-cook3.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.test {
+  display: none;
+
+}
+
+.back {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.special {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 253px;
+  top: 125px;
+}
+
+.priceBox {
+  position: absolute;
+  width: 335px;
+  height: 99px;
+  left: 13px;
+  top: 286px;
+  border-radius: 24px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.priceBox span {
+  position: absolute;
+  left: 35px;
+  top: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+  letter-spacing: -0.24px;
+  color: #000000;
+}
+
+#rangePrice {
+  position: absolute;
+  width: 145px;
+  height: 20px;
+  left: 174px;
+  top: 16px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+
+  text-align: right;
+  letter-spacing: -0.24px;
+
+  color: #000000;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 292px;
+  /* Full-width */
+  height: 4px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 8px;
+  /* Set a specific slider handle width */
+  height: 8px;
+  /* Slider handle height */
+  background: #FF5454;
+  /* Green background */
+  cursor: pointer;
+  border-radius: 50%;
+  /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 8px;
+  /* Set a specific slider handle width */
+  height: 8px;
+  border-radius: 50%;
+  /* Slider handle height */
+  background: #FF5454;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.tool {
+  position: absolute;
+  left: 41px;
+  top: 347px;
+
+}
+
+.back p {
+  position: absolute;
+  width: 148px;
+  height: 20px;
+  left: 113px;
+  top: 222px;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+  letter-spacing: -0.24px;
+
+  color: #000000;
+}
+
+.option {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 50px;
+  top: 125px;
+}
+
+.photo {
+  position: absolute;
+  width: 131px;
+  height: 131px;
+  left: 122px;
+  top: 83px;
+  background: url("photo.png");
+  box-sizing: border-box;
+}
+
+.menu {
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 16px;
+  top: 16px;
+}
+
+
+@media only screen and(max-width: 767px) {
+  body {
+    background-image: url("488176-fish-vegetables-food-cook3.png");
+  }
+
+  .back {
+    background: white;
+  }
+
+  .slider {
+    width: 100%;
+  }
+}
