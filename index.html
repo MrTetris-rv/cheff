@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,13 +13,37 @@
 <body>
 
   <div class="pics">
-    <div class="pic1">
+    <div class="pic1 fish" id="fish" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)"
+      ontouchend="touchEnd(event)">
       <div class="ds">
         <img src="images/dbBtn.png" alt="" id="dbBtn">
         <p id="foodName">Мороженое</p>
+        <p id="foodPrice">6 BYN</p>
+        <img src="images/delivery.png" alt="" id="foodDeliveryPic">
+        <p id="foodDeliveryPrice">3 BYN</p>
+        <p id="foodCategory">Десерт, сладкое</p>
+        <div class="stars">
+          <span class="material-icons gold">
+            grade
+          </span>
+          <span class="material-icons gold">
+            grade
+          </span>
+          <span class="material-icons gold">
+            grade
+          </span>
+          <span class="material-icons">
+            grade
+          </span>
+          <span class="material-icons">
+            grade
+          </span>
+        </div>
       </div>
     </div>
-    <div class="pic2"></div>
+    <div class="pic2 fish2" id="fish2" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)"
+      ontouchend="touchEnd(event)">
+    </div>
     <div class="pic3"></div>
     <div class="pic4"></div>
     <div class="pic5"></div>
